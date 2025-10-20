@@ -24,10 +24,10 @@ producer:
 	@echo "📤 啟動生產者..."
 	cd producer && go run main.go
 
-# 清理所有資料
-clean: down
-	@echo "🗑️  清理所有資料..."
-	docker system prune -f
+# 清理專案資料
+clean:
+	@echo "🗑️  清理專案資料..."
+	docker-compose down -v --remove-orphans
 	@echo "✅ 清理完成！"
 
 # 顯示狀態

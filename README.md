@@ -107,3 +107,6 @@ go-kafka-event-demo/
 make clean
 make up
 ```
+
+## 免責聲明
+*本專案僅供學習使用，執行指令前請先了解各指令的作用。*
